@@ -48,4 +48,9 @@ public class MemberCommandServiceImpl implements MemberCommandService{
         return categoryIds.stream()
                 .allMatch(categoryId -> foodCategoryRepository.existsById(categoryId));
     }
+
+    @Override
+    public boolean memberExist(Long memberId) {
+        return memberRepository.existsById(memberId);
+    }
 }

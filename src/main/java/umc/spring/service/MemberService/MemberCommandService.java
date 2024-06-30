@@ -8,4 +8,5 @@ import java.util.List;
 public interface MemberCommandService {
     Member joinMember(MemberRequestDTO.JoinDto request);
     boolean categoriesExist(List<Long> categoryIds);
+    boolean memberExist(Long categoryId);
 }
